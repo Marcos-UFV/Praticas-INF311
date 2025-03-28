@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/lValor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 1: " />
+
+    <EditText
+        android:id="@+id/tValor1"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lValor1"
+        android:layout_alignStart="@id/lValor1"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/lValor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tValor1"
+        android:layout_alignStart="@+id/lValor1"
+        android:text="Valor 2: " />
+
+    <EditText
+        android:id="@+id/tValor2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lValor2"
+        android:layout_alignStart="@+id/lValor1"
+        android:layout_marginTop="0dp" />
+
+    <Button
+        android:id="@+id/btSoma"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_below="@id/tValor2"
+        android:layout_alignStart="@+id/lValor1"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:onClick="operacao"
+        android:tag="1"
+        android:text="+" />
+    <Button
+        android:id="@+id/btSubtracao"
+        android:tag="2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_toRightOf="@+id/btSoma"
+        android:layout_alignTop="@+id/btSoma"
+        android:text="-"
+        android:onClick="operacao"/>
+    <Button
+        android:id="@+id/btMultiplicacao"
+        android:tag="3"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@id/btSubtracao"
+        android:layout_alignTop="@+id/btSoma"
+        android:layout_marginRight="5dp"
+        android:text="*"
+        android:onClick="operacao"/>
+    <Button
+        android:id="@+id/btDivisao"
+        android:tag="4"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_toRightOf="@id/btMultiplicacao"
+        android:layout_alignTop="@+id/btSoma"
+        android:text="/"
+        android:onClick="operacao"
+        android:layout_alignEnd="@+id/tValor2"/>
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lResultado"
+        android:layout_below="@id/btDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="O resusltado é:"/>
+    <TextView
+        android:id="@+id/tRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lResultado"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
