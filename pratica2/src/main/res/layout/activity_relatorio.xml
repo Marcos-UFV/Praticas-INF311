@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelatorioActivity">
+
+    <TextView
+        android:id="@+id/lHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:text="Relatório Nutricional" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lHeader"
+        android:layout_alignStart="@id/lHeader"
+        android:text="Nome:"
+        android:id="@+id/lNome"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fulano da Silva"
+        android:id="@+id/tNome"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBaseline="@id/lNome"
+        android:layout_alignStart="@id/lNome"
+        android:layout_toRightOf="@id/lNome"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tNome"
+        android:layout_alignStart="@id/lHeader"
+        android:text="Idade:"
+        android:id="@+id/lIdade"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 anos"
+        android:id="@+id/tIdade"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBaseline="@id/lIdade"
+        android:layout_alignStart="@id/lNome"
+        android:layout_toRightOf="@id/lIdade"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lIdade"
+        android:layout_alignStart="@id/lHeader"
+        android:text="Peso:"
+        android:id="@+id/lPeso"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="63.5 Kg"
+        android:id="@+id/tPeso"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBaseline="@id/lPeso"
+        android:layout_alignStart="@id/lNome"
+        android:layout_toRightOf="@id/lNome"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tPeso"
+        android:layout_alignStart="@id/lHeader"
+        android:text="Altura:"
+        android:id="@+id/lAltura"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.70 m"
+        android:id="@+id/tAltura"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBaseline="@id/lAltura"
+        android:layout_alignStart="@id/lNome"
+        android:layout_toRightOf="@id/lNome"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lAltura"
+        android:layout_alignStart="@id/lHeader"
+        android:text="IMC:"
+        android:id="@+id/lIMC"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21.7 Kg/m²"
+        android:id="@+id/tIMC"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBaseline="@id/lIMC"
+        android:layout_alignStart="@id/lNome"
+        android:layout_toRightOf="@id/lNome"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lIMC"
+        android:layout_alignStart="@id/lHeader"
+        android:text="Classificação:"
+        android:id="@+id/lClassificacao"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso Ideal"
+        android:id="@+id/tClassificacao"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBaseline="@id/lClassificacao"
+        android:layout_toRightOf="@id/lClassificacao"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tClassificacao"
+        android:layout_marginTop="50dp"
+        android:text="Realizar novo Cálculo"
+        android:onClick="voltar"/>
+
+</RelativeLayout>

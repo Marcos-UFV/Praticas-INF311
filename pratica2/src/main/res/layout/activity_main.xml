@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/lNome"/>
+    <EditText
+        android:id="@+id/tNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/lNome"
+        android:layout_alignBaseline="@+id/lNome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:"
+        android:id="@+id/lIdade"
+        android:layout_marginTop="50dp"
+        android:layout_alignStart="@id/lNome"
+        android:layout_below="@+id/lNome"/>
+
+    <EditText
+        android:id="@+id/tIdade"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lIdade"
+        android:layout_alignStart="@+id/lIdade" />
+
+    <TextView
+        android:id="@+id/lPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lIdade"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/tIdade"
+        android:text="Peso(kg):" />
+
+    <EditText
+        android:id="@+id/tPeso"
+        android:layout_width="59dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lPeso"
+        android:layout_alignStart="@id/lPeso"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp" />
+
+    <TextView
+        android:id="@+id/lAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/lIdade"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/tPeso"
+        android:text="Altura(m):" />
+
+    <EditText
+        android:id="@+id/tAltura"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lAltura"
+        android:layout_alignStart="@+id/lAltura" />
+    <Button
+        android:layout_marginTop="100dp"
+        android:text="Relatório Nutricional"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tPeso"
+        android:id="@+id/btnRelatorio"
+        android:onClick="calcular"/>
+</RelativeLayout>
